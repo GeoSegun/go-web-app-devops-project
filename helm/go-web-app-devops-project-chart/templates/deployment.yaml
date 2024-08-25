@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: go-web-app-devops-project
-        image: durolusegun/go-web-app-devops-project:v1
+        image: durolusegun/go-web-app-devops-project:{{ .Values.image.tag }}
         ports:
         - containerPort: 8080
